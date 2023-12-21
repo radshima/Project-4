@@ -1,6 +1,10 @@
-<h1>detail</h1>
- <ul>
-  <li>{{food}}</li>
-  <li>{{food.price}}</li>
-  <li>{{food.rate}}</li>
- </ul>
+
+ {% extends 'base.html' %}
+ 
+ {% block content %}
+  {{food.name}}
+  <img width="40%" src="{{food.photo.url}}"
+  {{food.price}}
+  {{food.rate}}
+ {% endblock content %}
+  
